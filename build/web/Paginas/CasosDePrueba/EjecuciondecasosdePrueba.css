@@ -1,0 +1,42 @@
+@media(min-width:1025px){
+    #ejecucion {
+        min-height: 443px;
+    }
+  
+}
+
+@media(width:1024px){
+    #ejecucion {
+        min-height: 540px;
+    }
+  
+}
+
+@media (min-width: 1500px){
+    #ejecucion {
+        min-height: 755px;
+    }
+}
+
+@media(max-width:800px){
+    #ejecucion {
+        min-height: 720px;
+    }
+  
+}
+
+.alert-casos {
+    padding: 5px !important;
+    margin-bottom: 3px !important;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert-proxima {
+    color: #B46400;
+    background-color: #FDE1BE;
+}
+
+.alert-linck-proxima {
+    color: #7A4606 !important;
+}

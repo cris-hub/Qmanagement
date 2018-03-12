@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <f:view>
+
+
+            <h:form>
+                <h1><h:outputText value="Create/Edit"/></h1>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="IdIncidentes:" for="idIncidentes" />
+                    <h:inputText id="idIncidentes" value="#{incidentesControlador.incidente.idIncidentes}" title="IdIncidentes" required="true" requiredMessage="The IdIncidentes field is required."/>
+                    <h:outputLabel value="Descripcion:" for="descripcion" />
+                    <h:inputText id="descripcion" value="#{incidentesControlador.incidente.descripcion}" title="Descripcion" required="true" requiredMessage="The Descripcion field is required."/>
+                    <h:outputLabel value="Tipo:" for="tipo" />
+                    <h:selectOneMenu id="tipo" value="#{incidentesControlador.tipo.idtipo}" title="Tipo" required="true" requiredMessage="The Tipo field is required.">
+                        <!-- TODO: update below reference to list of available items-->
+                        <f:selectItems value="#{incidentesControlador.listaTipos()}" var="ti" itemLabel="#{ti.tipo}" itemValue="#{ti.idtipo}"/>
+                    </h:selectOneMenu>
+                    <h:outputLabel value="IdPrioridad:" for="idPrioridad" />
+                    <h:selectOneMenu id="idPrioridad" value="#{incidentesControlador.incidente.idPrioridad}" title="IdPrioridad" required="true" requiredMessage="The IdPrioridad field is required.">
+                        <!-- TODO: update below reference to list of available items-->
+                        <f:selectItems value="#{fixme}"/>
+                    </h:selectOneMenu>
+                    <h:outputLabel value="IdUsuarios:" for="idUsuarios" />
+                    <h:selectOneMenu id="idUsuarios" value="#{incidentesControlador.incidente.idUsuarios}" title="IdUsuarios" required="true" requiredMessage="The IdUsuarios field is required.">
+                        <!-- TODO: update below reference to list of available items-->
+                        <f:selectItems value="#{fixme}"/>
+                    </h:selectOneMenu>
+                    <h:outputLabel value="IdEjecucion:" for="idEjecucion" />
+                    <h:selectOneMenu id="idEjecucion" value="#{incidentesControlador.incidente.idEjecucion}" title="IdEjecucion" required="true" requiredMessage="The IdEjecucion field is required.">
+                        <!-- TODO: update below reference to list of available items-->
+                        <f:selectItems value="#{fixme}"/>
+                    </h:selectOneMenu>
+                    <h:outputLabel value="Naturaleza:" for="naturaleza" />
+                    <h:selectOneMenu id="naturaleza" value="#{incidentesControlador.incidente.naturaleza}" title="Naturaleza" required="true" requiredMessage="The Naturaleza field is required.">
+                        <!-- TODO: update below reference to list of available items-->
+                        <f:selectItems value="#{fixme}"/>
+                    </h:selectOneMenu>
+                    <h:outputLabel value="Severidad:" for="severidad" />
+                    <h:selectOneMenu id="severidad" value="#{incidentesControlador.incidente.severidad}" title="Severidad" required="true" requiredMessage="The Severidad field is required.">
+                        <!-- TODO: update below reference to list of available items-->
+                        <f:selectItems value="#{fixme}"/>
+                    </h:selectOneMenu>
+                    <h:outputLabel value="IdCore:" for="idCore" />
+                    <h:selectOneMenu id="idCore" value="#{incidentesControlador.incidente.idCore}" title="IdCore" required="true" requiredMessage="The IdCore field is required.">
+                        <!-- TODO: update below reference to list of available items-->
+                        <f:selectItems value="#{fixme}"/>
+                    </h:selectOneMenu>
+                </h:panelGrid>
+            </h:form>
+        </f:view>
+
+    </h:body>
+</html>
+

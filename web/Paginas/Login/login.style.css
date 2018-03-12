@@ -1,0 +1,81 @@
+#body{
+    background-image: url("../../Img/rawpixel-com-274858.jpg");
+    background-size: 100% 100%;
+}
+
+#input{
+    background-color: #333 !important;
+    border-color: #333 !important;
+    color:#999999 !important;
+}
+
+p {
+    color:#999999 !important;
+}
+
+button{
+    background-color: #999999 !important;
+    border-color: #333 !important;
+    text-shadow: none !important;
+}
+
+button:hover{
+    background-color: #999999 !important;
+    border-color: #333 !important;
+    text-shadow: none !important;
+}
+
+#title{
+    color: #999999 !important;
+}
+
+.container-top{
+    margin-top: 120px !important;
+}
+
+.container-personalized{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+
+.img-logo-ibis {
+    width: 80px;
+}
+
+@media (max-width: 768px) {
+    .container-top{
+        margin-top:100px !important;
+    }
+    .container-personalized{
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 3px;
+        padding-top: 80px !important;
+        padding-bottom: 80px !important;
+    }
+}
+
+@media (max-width: 732px) {
+    .container-top{
+        margin-top:20px !important;
+    }
+    .container-personalized{
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 3px;
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .container-top{
+        margin-top:80px !important;
+    }
+    .container-personalized{
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 3px;
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+}
