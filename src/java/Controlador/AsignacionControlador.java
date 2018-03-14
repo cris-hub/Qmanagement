@@ -162,7 +162,7 @@ public class AsignacionControlador implements Serializable {
     public List<Usuario> listaDesarrolloUsuarios() {
         return desarrolloFacade.findAll();
     }
-
+//METODO PARA LA CREACION DE UN ESCENARIO DE UN PROYECTO
     public String crearAsignacion() {
         FacesMessage message = null;
         try {
